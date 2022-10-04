@@ -1,7 +1,8 @@
 # Created a Dribble Design In Tailwind & React
 
+It is one of design to make your own onboaring page with simple and good ui.
 
-## It is a Onboaring Ui with steps 
+## User Interface
 
 ![image_processing20210517-20107-a458z8](https://user-images.githubusercontent.com/52120562/193949346-afb0fbf6-bfe1-4a57-b66f-8890fb53ef4e.png)
 
