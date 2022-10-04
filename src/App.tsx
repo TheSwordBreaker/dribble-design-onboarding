@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react"
 import Steps from "./component/Steps"
 
 function App() {
-  const [count, setCount] = useState(3)
+  const [count, setCount] = useState(0)
   const [active, setActive] = useState(true)
   const next = () => setCount((c) => (c < 4 ? ++c : 4))
 
