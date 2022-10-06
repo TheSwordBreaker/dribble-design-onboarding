@@ -5,7 +5,7 @@ type stepProps = {
 import cx from "classnames"
 export default function Steps({ changeStep, count }: stepProps) {
   return (
-    <ul className="flex w-full justify-between items-center pt-12 px-14">
+    <ul className="flex w-full justify-between items-center pt-12 ">
       <li>
         <button onClick={() => changeStep(1)} className="step step-active">
           1

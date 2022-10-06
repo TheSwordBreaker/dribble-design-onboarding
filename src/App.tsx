@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div id="onboarding" className="flex flex-col w-full h-full items-center font-serif">
-      <div className="w-full lg:w-4/12  h-full flex flex-col items-center">
+      <div className="w-full xl:w-3/12 lg:w-4/12 md:w-8/12 h-full flex flex-col items-center px-6">
         <Header />
 
         <Steps count={count} changeStep={changeStep} />
