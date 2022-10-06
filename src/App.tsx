@@ -105,7 +105,7 @@ function App() {
             We'll Stremline your setup experience accordingly
           </span>
 
-          <div className="pt-4 text-sm flex w-full max-w-sm gap-4 items-center">
+          <div className="pt-4 text-sm flex w-full max-w-sm px-4 sm:px-8 gap-4 items-center">
             <div
               className={`border rounded-md px-4 pb-3 pt-2  w-full h-full ${
                 !active ? "border-gray-300" : "border-primary/90"
