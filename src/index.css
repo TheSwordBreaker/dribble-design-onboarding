@@ -11,7 +11,7 @@
 }
 
 .step {
-  @apply rounded-full border border-gray-200 h-4 w-4 p-4 grid place-content-center text-sm;
+  @apply rounded-full border border-gray-200 h-4 w-4 p-4 grid place-content-center text-sm shadow-sm;
 }
 
 .step-active {

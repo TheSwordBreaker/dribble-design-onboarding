@@ -165,7 +165,7 @@ function App() {
           </span>
         </div>
 
-        <button className="btn w-full max-w-xs mt-4 " onClick={() => next()}>
+        <button className="btn w-full max-w-xs mt-4 shadow-md" onClick={() => next()}>
           {count !== 4 ? `Create` : "Launch"} WorkSpace
         </button>
       </div>
