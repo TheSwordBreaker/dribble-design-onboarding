@@ -2,24 +2,21 @@
 import cx from "classnames"
 import React, { useEffect, useState } from "react"
 
+import Header from "./component/Header"
 import Steps from "./component/Steps"
 
 function App() {
   const [count, setCount] = useState(1)
   const [active, setActive] = useState(true)
   const next = () => setCount((c) => (c < 4 ? ++c : 4))
+  const changeStep = (i: number) => setCount(i)
 
   return (
     <div id="onboarding" className="flex flex-col w-full h-full items-center font-serif">
       <div className="w-full lg:w-4/12  h-full flex flex-col items-center">
-        <div className="flex items-center pt-16">
-          <div>
-            <img src="./icon.png" alt="" />
-          </div>
-          <span className="text-2xl font-semibold">Eden</span>
-        </div>
+        <Header />
 
-        <Steps changeStep={(i) => setCount(i)} count={count} />
+        <Steps count={count} changeStep={changeStep} />
 
         <div
           id="card1"
@@ -166,7 +163,6 @@ function App() {
           <span className="small-heading pb-4">
             You have completed onboarding, you can start using the Eden!
           </span>
-          {/* <button className="btn w-full max-w-xs mt-4 "> Launch Eden</button> */}
         </div>
 
         <button className="btn w-full max-w-xs mt-4 " onClick={() => next()}>
