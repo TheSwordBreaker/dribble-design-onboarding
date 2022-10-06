@@ -27,7 +27,7 @@ h2 {
 }
 
 .small-heading {
-  @apply text-sm text-gray-500;
+  @apply text-sm text-gray-500 text-center;
 }
 
 .label-text {

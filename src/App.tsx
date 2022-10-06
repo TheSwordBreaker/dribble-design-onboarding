@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div id="onboarding" className="flex flex-col w-full h-full items-center font-serif">
-      <div className="w-full xl:w-3/12 lg:w-4/12 md:w-8/12 h-full flex flex-col items-center px-6">
+      <div className="w-full lg:w-6/12 md:w-8/12 h-full flex flex-col items-center px-6 lg:px-0">
         <Header />
 
         <Steps count={count} changeStep={changeStep} />
@@ -105,9 +105,9 @@ function App() {
             We'll Stremline your setup experience accordingly
           </span>
 
-          <div className="pt-4 text-sm flex w-full px-16 gap-4 items-center">
+          <div className="pt-4 text-sm flex w-full max-w-sm gap-4 items-center">
             <div
-              className={`border rounded-md px-4 pb-3 pt-2  w-full ${
+              className={`border rounded-md px-4 pb-3 pt-2  w-full h-full ${
                 !active ? "border-gray-300" : "border-primary/90"
               }`}
               onClick={() => setActive(true)}
@@ -129,7 +129,7 @@ function App() {
             </div>
 
             <div
-              className={`border rounded-md px-4 pb-3 pt-2 w-full cursor-pointer ${
+              className={`border rounded-md px-4 pb-3 pt-2 w-full h-full cursor-pointer ${
                 active ? "border-gray-300" : "border-primary/90"
               }`}
               onClick={() => setActive(false)}
